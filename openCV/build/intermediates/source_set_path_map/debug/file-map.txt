@@ -1,0 +1,8 @@
+org.opencv.openCV-pngs-0 E:\Projects\Android\PDDemo\openCV\build\generated\res\pngs\debug
+org.opencv.openCV-resValues-1 E:\Projects\Android\PDDemo\openCV\build\generated\res\resValues\debug
+org.opencv.openCV-rs-2 E:\Projects\Android\PDDemo\openCV\build\generated\res\rs\debug
+org.opencv.openCV-packageDebugResources-3 E:\Projects\Android\PDDemo\openCV\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+org.opencv.openCV-packageDebugResources-4 E:\Projects\Android\PDDemo\openCV\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+org.opencv.openCV-merged_res-5 E:\Projects\Android\PDDemo\openCV\build\intermediates\merged_res\debug
+org.opencv.openCV-java-6 E:\Projects\Android\PDDemo\openCV\java\res
+org.opencv.openCV-debug-7 E:\Projects\Android\PDDemo\openCV\src\debug\res

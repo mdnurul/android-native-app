@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/pd_master" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/pd_master/iped_dal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/pd_master/ped_adab" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/pd_master/ped_adtf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/pd_master/ped_algo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/pd_master/ped_core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/pd_master/ped_datatypes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/pd_master/ped_debug" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/pd_master/ped_plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/data" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/doc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/iped_dal" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_adab" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_adtf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_adtf_dbg2xml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_algo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_datatypes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_debug" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_devqt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_gm_app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_plugin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_plugin_bu1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/ped_training" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/pedalg_ford" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/pedvariants" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/qt_proto" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/proj3037_pd_master/test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/src/main/cpp/source_dist_ford_dev/ped_datatypes_linga_npb" vcs="hg4idea" />
+  </component>
+</project>
