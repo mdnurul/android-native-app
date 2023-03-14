@@ -1,13 +1,19 @@
 package com.aitl.pddemo;
 
+import static org.opencv.core.CvType.CV_8UC3;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceView;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.Manifest;
@@ -22,7 +28,9 @@ import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
+import org.opencv.android.Utils;
 import org.opencv.core.Mat;
+import org.opencv.core.Size;
 
 import java.security.Permissions;
 
@@ -38,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements CvCameraViewListe
     private static final int CAMERA_PERMISSION_REQUEST = 1;
 
     private CameraBridgeViewBase mOpenCvCameraView;
+
+    Mat pdDetectedImage;
+    ImageView mageView;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -75,6 +86,8 @@ public class MainActivity extends AppCompatActivity implements CvCameraViewListe
 
         mOpenCvCameraView.setCvCameraViewListener(this);
 
+        mageView = binding.imageView;
+
         // Example of a call to a native method
         //TextView tv = binding.sampleText;
         //tv.setText(stringFromJNI());
@@ -83,6 +96,32 @@ public class MainActivity extends AppCompatActivity implements CvCameraViewListe
             Log.e("OpenCV", "Unable to load OpenCV!");
         else
             Log.d("OpenCV", "OpenCV loaded Successfully!");
+
+
+        Size sz = new Size(1920,1080);
+        pdDetectedImage = new Mat(1920,1080,CV_8UC3);
+
+
+
+        Button startButton = binding.buttonstart;
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                // Do something
+                startPDThread(pdDetectedImage.getNativeObjAddr());
+            }
+        });
+
+        Button stopButton = binding.buttonstop;
+        stopButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                // Do something
+                stopPDThread();
+            }
+        });
     }
 
     @Override
@@ -130,7 +169,7 @@ public class MainActivity extends AppCompatActivity implements CvCameraViewListe
      * A native method that is implemented by the 'pddemo' native library,
      * which is packaged with this application.
      */
-    public native String stringFromJNI();
+    //public native String stringFromJNI();
 
     private native void adaptiveThresholdFromJNI(long mat);
 
@@ -152,7 +191,17 @@ public class MainActivity extends AppCompatActivity implements CvCameraViewListe
         // native call to process current camera frame
         adaptiveThresholdFromJNI(mat.getNativeObjAddr());
 
+        //final Bitmap bmp = Bitmap.createBitmap(pdDetectedImage.cols(), pdDetectedImage.rows(), Bitmap.Config.RGB_565);
+        //Utils.matToBitmap(pdDetectedImage, bmp);
+        //mageView.setImageBitmap(bmp);
+
+
         // return processed frame for live preview
         return mat;
     }
+
+    public native String startPDThread(long mat);
+
+
+    public native String stopPDThread();
 }
