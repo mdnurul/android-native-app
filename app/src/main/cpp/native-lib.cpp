@@ -61,6 +61,8 @@ void pdthread(jlong matAddr){
     // get Mat from raw address
     Mat &mat = *(Mat *) matAddr;
 
+    pedapp_Init();
+
     for(int i=0;i<1000 && (threadFlag == true);i++){
         if(initFile == 0)
         {
